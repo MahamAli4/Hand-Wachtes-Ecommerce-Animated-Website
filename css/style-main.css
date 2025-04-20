@@ -624,3 +624,41 @@ p{
     color: #007bff;
     background: #007bff IM !important;
 }
+
+
+/* slider  */
+
+.float-img {
+    animation: floatImage 5s ease-in-out infinite;
+  }
+
+  @keyframes floatImage {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  .review-container {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  .carousel-item {
+    padding: 30px;
+  }
+
+  .review-text {
+    font-size: 1.1rem;
+    color: #333;
+  }
+
+  .review-author {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #555;
+  }
