@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Watches Ecommerce Website</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Google Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style-main.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav
+        class="navbar  fixed-top navbar-expand-lg navbar-light text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3  ">
+        <div class="container">
+            <a class="navbar-brand me-5" href="#">
+                <h2>
+                    <span class="material-symbols-outlined fs-2">devices_wearables</span>
+                    WATCHES
+                </h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav me-auto">
+                    <a class="nav-link active fw-bold hover-underline" href="#">Home</a>
+                    <a class="nav-link fw-bold hover-underline" href="#">Featured</a>
+                    <a class="nav-link fw-bold hover-underline" href="#">Products</a>
+                    <a class="nav-link fw-bold hover-underline" href="#">Testimonial</a>
+                    <a class="nav-link fw-bold hover-underline" href="#">New</a>
+                </div>
+
+                <!-- Icon Buttons -->
+                <div class="nav__btns d-flex align-items-center me-4">
+                    <!-- Theme Button -->
+                    <span class="material-symbols-outlined me-3 fs-4 animate__animated" id="theme-button">
+                        light_mode
+                    </span>
+
+                    <!-- Cart Icon -->
+                    <div class="nav__shop animate__animated">
+                        <span class="material-symbols-outlined fs-4">
+                            shopping_cart
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Modal Trigger -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <i class="fa fa-info"></i> Get information
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body px-4 py-5">
+                    <button type="button" class="btn-close color-dark" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+
+                    <h5 class="text-uppercase">Jonathan Adler</h5>
+                    <h4 class="mt-4 theme-color mb-4">Thanks for your order</h4>
+
+                    <span class="theme-color">Payment Summary</span>
+                    <hr />
+
+                    <div class="d-flex justify-content-between">
+                        <span class="fw-bold">Ether Chair (Qty: 1)</span>
+                        <span class="text-muted">$1750.00</span>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <small>Shipping</small>
+                        <small>$175.00</small>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <small>Tax</small>
+                        <small>$200.00</small>
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-3">
+                        <span class="fw-bold">Total</span>
+                        <span class="fw-bold theme-color">$2125.00</span>
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <button class="btn btn-primary">Track your order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="container-fluid" id="hero-section">
+        <div class="container">
+            <div
+                class="row d-flex flex-md-row flex-sm-column flex-sm-column-reverse flex-column-reverse                                                                                                  gy-5">
+                <div class="col-md-6 p-5 d-flex flex-column justify-content-center align-items-start ">
+                    <div class="neon-container">
+                        <h1 class="neon-text display-1 fw-bold mt-5">WHERE TIME </h1>
+                        <h1 class="display-5 fw-bold cursor typewriter-animation">BECOMES TREASURE</h1>
+                    </div>
+
+                    <!-- <h1 class="display-1 fw-bold mt-5">WHERE TIME </h1>
+                    <h1 class="display-5 fw-bold">BECOMES TREASURE</h1> -->
+                    <P class="text-start  ps-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Consectetur
+                        repellendus error eaque
+                        consequuntur voluptatem doloremque ab culpa laboriosam maiores nisi. Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Iusto magnam deserunt molestias ratione ea quo aut rerum
+                        praesentium officia itaque.
+                    </P>
+                    <button class="mt-2 ms-2 px-4 py-2 bg-primary-subtle fw-bolder">ODER NOW</button>
+                    <!-- SOCIAL ICONS  -->
+                    <div class="heading d-flex justify-content-center align-items-center">
+
+
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
+                        </ul>
+
+
+
+                    </div>
+                </div>
+                <div class="col-md-6  mt-md-5 mt-sm-2 mt-2 mb-5">
+                    <div class="innercard mx-auto mt-5 bg-light p-5 rounded-circle watch-background d-flex justify-content-center align-items-center mt-5 "
+                        style="box-shadow: 5px 5px 5px 5px lightgray;">
+                        <img src="./images/hero-section-watch.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- FEATURED  -->
+    <h1 class="display-5 mt-5  neon-text mb-5 fw-bold text-center"> FEATURED</h1>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <!-- watches cart with aimation  -->
+                    <div class="wrapper">
+
+                        <div class="card text-center">
+
+                            <div class="image">
+
+
+                                <img src="./images/CART1.pnG" width="300">
+
+                            </div>
+                            <div class="about-product text-center">
+
+                                <h3>COX Headphone</h3>
+
+                                <h4>$99.<small>99</small></h4>
+
+                                <button class="btn btn-success buy-now">Buy Now</button>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="wrapper">
+
+                        <div class="card text-center">
+
+                            <div class="image">
+
+
+                                <img src="./images/cart2.png" width="300">
+
+                            </div>
+
+
+                            <div class="about-product text-center">
+
+                                <h3>COX Headphone</h3>
+
+                                <h4>$99.<small>99</small></h4>
+
+                                <button class="btn btn-success buy-now">Buy Now</button>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="wrapper">
+
+                        <div class="card text-center">
+
+                            <div class="image">
+
+
+                                <img src="./images/hero-section-watch.png" width="400">
+
+                            </div>
+
+
+                            <div class="about-product text-center">
+
+                                <h3>COX Headphone</h3>
+
+                                <h4>$99.<small>99</small></h4>
+
+                                <button class="btn btn-success buy-now">Buy Now</button>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- OUR STORY  -->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row gy-5 align-items-center justify-content-center">
+                <div class="col-md-6">
+                    <div class="wrapper2 mt-5 mb-5">
+                        <div class="card-new-3">
+                            <div class="innercard mt-5 bg-light p-5 rounded-circle">
+                                <img src="./images/ourstory.png" width=400 height=400>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-5">
+                    <h3 class="neon-text mt-5">
+                        OUR STORY
+                    </h3>
+                    <h2 class="display-4 fw-bold ">KEEPING YOU ON TIME </h2>
+                    <H2>IN SRYLE.....</H2>
+                    <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem voluptatum repudiandae
+                        cupiditate magni? Omnis est commodi facere laborum qui, vel ducimus tempore, nesciunt ipsa sint
+                        molestias vero sequi quam dolore?
+                    </P>
+                    <button class="mt-2 ms-2 px-4 py-2 bg-primary-subtle fw-bolder">DISCOVER</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- pRODUCTS  -->
+    <div class="container-fluid">
+        <h1 class="display-5 mt-5  neon-text mb-5 fw-bold text-center"> PRODUCTS</h1>
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-md-4 mb-3">
+                    <div class="container d-flex justify-content-center"
+                        style="background-color: rgb(5, 102, 134); border: 5px solid blue;box-shadow: 5px 5px 5px 7px  lightgrey; border-radius: 30px;">
+                        <div class="cardED p-2">
+                            <div class="p-info px-3 py-3">
+                                <div>
+                                    <h5 class="mb-0">Beats By Dre</h5> <span>Professional Headphones</span>
+                                </div>
+                                <div class="p-price d-flex flex-row"> <span>$</span>
+                                    <h1>299</h1>
+                                </div>
+                                <div class="heart"> <i class="fa-regular fa-heart"></i> </div>
+                            </div>
+                            <div class="text-center p-image">
+                                <img src="./images/CART1.png">
+                            </div>
+                            <div class="p-about">
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout. The point of using Lorem Ipsum is
+                                    that it has a more-or-less normal distribution of letters, as opposed</p>
+                            </div>
+                            <div class="buttonsS d-flex flex-row gap-3 px-3">
+
+                                <button class="btnPRODUCT btn-danger w-100">View</button> <button
+                                    class="btnPRODUCT btn-outline-danger w-100">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="container d-flex justify-content-center"
+                        style="background-color: rgb(15, 183, 239); border: 5px solid blue;box-shadow: 5px 5px 5px 7px  lightgrey; border-radius: 30px;">
+                        <div class="cardED p-2">
+                            <div class="p-info px-3 py-3">
+                                <div>
+                                    <h5 class="mb-0">Beats By Dre</h5> <span>Professional Headphones</span>
+                                </div>
+                                <div class="p-price d-flex flex-row"> <span>$</span>
+                                    <h1>299</h1>
+                                </div>
+                                <div class="heart"> <i class="fa-regular fa-heart"></i> </div>
+                            </div>
+                            <div class="text-center p-image">
+                                <img src="./images/cart2.png">
+                            </div>
+                            <div class="p-about">
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout. The point of using Lorem Ipsum is
+                                    that it has a more-or-less normal distribution of letters, as opposed</p>
+                            </div>
+                            <div class="buttonsS d-flex flex-row gap-3 px-3">
+
+                                <button class="btnPRODUCT btn-danger w-100">View</button> <button
+                                    class="btnPRODUCT btn-outline-danger w-100">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="container d-flex justify-content-center"
+                        style="background-color: rgb(7, 50, 142); border: 5px solid blue;box-shadow: 5px 5px 5px 7px  lightgrey; border-radius: 30px;color: #fff;">
+                        <div class="cardED p-2">
+                            <div class="p-info px-3 py-3">
+                                <div>
+                                    <h5 class="mb-0">Beats By Dre</h5> <span>Professional Headphones</span>
+                                </div>
+                                <div class="p-price d-flex flex-row"> <span>$</span>
+                                    <h1>299</h1>
+                                </div>
+                                <div class="heart"> <i class="fa-regular fa-heart"></i> </div>
+                            </div>
+                            <div class="text-center p-image">
+                                <img src="./images/ourstory.png">
+                            </div>
+                            <div class="p-about">
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout. The point of using Lorem Ipsum is
+                                    that it has a more-or-less normal distribution of letters, as opposed</p>
+                            </div>
+                            <div class="buttonsS d-flex flex-row gap-3 px-3">
+
+                                <button class="btnPRODUCT btn-danger w-100">View</button> <button
+                                    class="btnPRODUCT btn-outline-danger w-100">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row gy-5">
+                <div class="col-md-4 mb-3">
+                    <div class="container d-flex justify-content-center"
+                        style="background-color: rgb(5, 102, 134); border: 5px solid blue;box-shadow: 5px 5px 5px 7px  lightgrey; border-radius: 30px;">
+                        <div class="cardED p-2">
+                            <div class="p-info px-3 py-3">
+                                <div>
+                                    <h5 class="mb-0">Beats By Dre</h5> <span>Professional Headphones</span>
+                                </div>
+                                <div class="p-price d-flex flex-row"> <span>$</span>
+                                    <h1>299</h1>
+                                </div>
+                                <div class="heart"> <i class="fa-regular fa-heart"></i> </div>
+                            </div>
+                            <div class="text-center p-image">
+                                <img src="./images/CART1.png">
+                            </div>
+                            <div class="p-about">
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout. The point of using Lorem Ipsum is
+                                    that it has a more-or-less normal distribution of letters, as opposed</p>
+                            </div>
+                            <div class="buttonsS d-flex flex-row gap-3 px-3">
+
+                                <button class="btnPRODUCT btn-danger w-100">View</button> <button
+                                    class="btnPRODUCT btn-outline-danger w-100">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="container d-flex justify-content-center"
+                        style="background-color: rgb(15, 183, 239); border: 5px solid blue;box-shadow: 5px 5px 5px 7px  lightgrey; border-radius: 30px;">
+                        <div class="cardED p-2">
+                            <div class="p-info px-3 py-3">
+                                <div>
+                                    <h5 class="mb-0">Beats By Dre</h5> <span>Professional Headphones</span>
+                                </div>
+                                <div class="p-price d-flex flex-row"> <span>$</span>
+                                    <h1>299</h1>
+                                </div>
+                                <div class="heart"> <i class="fa-regular fa-heart"></i> </div>
+                            </div>
+                            <div class="text-center p-image">
+                                <img src="./images/cart2.png">
+                            </div>
+                            <div class="p-about">
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout. The point of using Lorem Ipsum is
+                                    that it has a more-or-less normal distribution of letters, as opposed</p>
+                            </div>
+                            <div class="buttonsS d-flex flex-row gap-3 px-3">
+
+                                <button class="btnPRODUCT btn-danger w-100">View</button> <button
+                                    class="btnPRODUCT btn-outline-danger w-100">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="container d-flex justify-content-center"
+                        style="background-color: rgb(7, 50, 142); border: 5px solid blue;box-shadow: 5px 5px 5px 7px  lightgrey; border-radius: 30px;color: #fff;">
+                        <div class="cardED p-2">
+                            <div class="p-info px-3 py-3">
+                                <div>
+                                    <h5 class="mb-0">Beats By Dre</h5> <span>Professional Headphones</span>
+                                </div>
+                                <div class="p-price d-flex flex-row"> <span>$</span>
+                                    <h1>299</h1>
+                                </div>
+                                <div class="heart"> <i class="fa-regular fa-heart"></i> </div>
+                            </div>
+                            <div class="text-center p-image">
+                                <img src="./images/ourstory.png">
+                            </div>
+                            <div class="p-about">
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout. The point of using Lorem Ipsum is
+                                    that it has a more-or-less normal distribution of letters, as opposed</p>
+                            </div>
+                            <div class="buttonsS d-flex flex-row gap-3 px-3">
+
+                                <button class="btnPRODUCT btn-danger w-100">View</button> <button
+                                    class="btnPRODUCT btn-outline-danger w-100">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row gy-5">
+                <div class="col-md-4 mb-3">
+                    <div class="container d-flex justify-content-center"
+                        style="background-color: rgb(5, 102, 134); border: 5px solid blue;box-shadow: 5px 5px 5px 7px  lightgrey; border-radius: 30px;">
+                        <div class="cardED p-2">
+                            <div class="p-info px-3 py-3">
+                                <div>
+                                    <h5 class="mb-0">Beats By Dre</h5> <span>Professional Headphones</span>
+                                </div>
+                                <div class="p-price d-flex flex-row"> <span>$</span>
+                                    <h1>299</h1>
+                                </div>
+                                <div class="heart"> <i class="fa-regular fa-heart"></i> </div>
+                            </div>
+                            <div class="text-center p-image">
+                                <img src="./images/CART1.png">
+                            </div>
+                            <div class="p-about">
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout. The point of using Lorem Ipsum is
+                                    that it has a more-or-less normal distribution of letters, as opposed</p>
+                            </div>
+                            <div class="buttonsS d-flex flex-row gap-3 px-3">
+
+                                <button class="btnPRODUCT btn-danger w-100">View</button> <button
+                                    class="btnPRODUCT btn-outline-danger w-100">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="container d-flex justify-content-center"
+                        style="background-color: rgb(15, 183, 239); border: 5px solid blue;box-shadow: 5px 5px 5px 7px  lightgrey; border-radius: 30px;">
+                        <div class="cardED p-2">
+                            <div class="p-info px-3 py-3">
+                                <div>
+                                    <h5 class="mb-0">Beats By Dre</h5> <span>Professional Headphones</span>
+                                </div>
+                                <div class="p-price d-flex flex-row"> <span>$</span>
+                                    <h1>299</h1>
+                                </div>
+                                <div class="heart"> <i class="fa-regular fa-heart"></i> </div>
+                            </div>
+                            <div class="text-center p-image">
+                                <img src="./images/cart2.png">
+                            </div>
+                            <div class="p-about">
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout. The point of using Lorem Ipsum is
+                                    that it has a more-or-less normal distribution of letters, as opposed</p>
+                            </div>
+                            <div class="buttonsS d-flex flex-row gap-3 px-3">
+
+                                <button class="btnPRODUCT btn-danger w-100">View</button> <button
+                                    class="btnPRODUCT btn-outline-danger w-100">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="container d-flex justify-content-center"
+                        style="background-color: rgb(7, 50, 142); border: 5px solid blue;box-shadow: 5px 5px 5px 7px  lightgrey; border-radius: 30px;color: #fff;">
+                        <div class="cardED p-2">
+                            <div class="p-info px-3 py-3">
+                                <div>
+                                    <h5 class="mb-0">Beats By Dre</h5> <span>Professional Headphones</span>
+                                </div>
+                                <div class="p-price d-flex flex-row"> <span>$</span>
+                                    <h1>299</h1>
+                                </div>
+                                <div class="heart"> <i class="fa-regular fa-heart"></i> </div>
+                            </div>
+                            <div class="text-center p-image">
+                                <img src="./images/ourstory.png">
+                            </div>
+                            <div class="p-about">
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout. The point of using Lorem Ipsum is
+                                    that it has a more-or-less normal distribution of letters, as opposed</p>
+                            </div>
+                            <div class="buttonsS d-flex flex-row gap-3 px-3">
+
+                                <button class="btnPRODUCT btn-danger w-100">View</button> <button
+                                    class="btnPRODUCT btn-outline-danger w-100">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- tESTIMONIALS  -->
+
+    <div class="container-fluid mt-5">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <span><img class="rounded-circle mb-5" width="10%" src="./images/qutation.png" alt=""></span>
+                    <p class="fw-bold">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, minus magni. Eius
+                        iste qui libero
+                        quaerat accusantium nobis, voluptatem quas nesciunt ut similique eligendi, eum odit, nam cumque
+                        animi vero?
+                    </p>
+                    <p class="fw-bolder fs-4">March 24 2025</p>
+                    <div class="image-container">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <img class="rounded-circle" src="data:image/jpeg;base64,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"
+                                    alt="">
+                            </div>
+                            <div class="col-sm-3">
+                                <h4>Cross Bones</h4>
+                                <p>Music Director</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrow-icons">
+                        <div class="pre">
+                            </div>
+                                <div class="pre"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="imageback-cirle-design">
+                            <!-- <img src="data:image/jpeg;base64,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" alt=""> -->
+                            <img height="100px" src="https://sc02.alicdn.com/kf/Hd8af2da1f3414384944ec6cfedf20dc8m/233996908/Hd8af2da1f3414384944ec6cfedf20dc8m.jpg" alt="">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NEW ARRIVELS  -->
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Theme & Animation JS -->
+        <script src="js/script.js">
+
+        </script>
+
+</body>
+
+</html>
