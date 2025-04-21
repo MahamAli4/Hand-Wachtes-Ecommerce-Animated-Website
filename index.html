@@ -24,16 +24,19 @@
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/style-main.css">
+
+     <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 
     <!-- Header -->
     <nav
-        class="navbar  fixed-top navbar-expand-lg navbar-light text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3  ">
+        class="navbar animated-navbar fixed-top navbar-expand-lg navbar-light text-primary-emphasis bg-primary-subtle border border-primary-subtle animate__animated animate__fadeInDown  ">
         <div class="container">
             <a class="navbar-brand me-5" href="#">
-                <h2>
+                <h2  class="brand-slide">
                     <span class="material-symbols-outlined fs-2">devices_wearables</span>
                     WATCHES
                 </h2>
@@ -46,10 +49,10 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav me-auto">
                     <a class="nav-link active fw-bold hover-underline" href="#">Home</a>
-                    <a class="nav-link fw-bold hover-underline" href="#">Featured</a>
-                    <a class="nav-link fw-bold hover-underline" href="#">Products</a>
-                    <a class="nav-link fw-bold hover-underline" href="#">Testimonial</a>
-                    <a class="nav-link fw-bold hover-underline" href="#">New</a>
+                    <a class="nav-link fw-bold link-animate" href="#">Featured</a>
+                    <a class="nav-link fw-bold link-animate" href="#">Products</a>
+                    <a class="nav-link fw-bold link-animate" href="#">Testimonial</a>
+                    <a class="nav-link fw-bold link-animate" href="#">New</a>
                 </div>
 
                 <!-- Icon Buttons -->
@@ -121,9 +124,8 @@
     <!-- Hero Section -->
     <div class="container-fluid" id="hero-section">
         <div class="container">
-            <div
-                class="row d-flex flex-md-row flex-sm-column flex-sm-column-reverse flex-column-reverse                                                                                                  gy-5">
-                <div class="col-md-6 p-5 d-flex flex-column justify-content-center align-items-start ">
+            <div class="row d-flex flex-md-row flex-sm-column flex-sm-column-reverse flex-column-reverse gy-5">
+                <div class="col-md-6 p-5 d-flex flex-column justify-content-center align-items-start animate__animated animate__fadeInLeft ">
                     <div class="neon-container">
                         <h1 class="neon-text display-1 fw-bold mt-5">WHERE TIME </h1>
                         <h1 class="display-5 fw-bold cursor typewriter-animation">BECOMES TREASURE</h1>
@@ -157,7 +159,7 @@
 
                     </div>
                 </div>
-                <div class="col-md-6  mt-md-5 mt-sm-2 mt-2 mb-5">
+                <div class="col-md-6  mt-md-5 mt-sm-2 mt-2 mb-5 animate__animated animate__fadeInRight">
                     <div class="innercard mx-auto mt-5 bg-light p-5 rounded-circle watch-background d-flex justify-content-center align-items-center mt-5 "
                         style="box-shadow: 5px 5px 5px 5px lightgray;">
                         <img src="./images/hero-section-watch.png" alt="">
@@ -569,7 +571,7 @@
 
     <!-- tESTIMONIALS  -->
 
-    <div class="container-fluid mt-5">
+    <!-- <div class="container-fluid mt-5">
         <div class="container mt-5">
             <div class="row">
                 <div class="col-md-6">
@@ -604,64 +606,114 @@
                         <div class="imageback-cirle-design">
                             <!-- <img src="data:image/jpeg;base64,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" alt=""> -->
                             <!-- <img height="100px" src="https://sc02.alicdn.com/kf/Hd8af2da1f3414384944ec6cfedf20dc8m/233996908/Hd8af2da1f3414384944ec6cfedf20dc8m.jpg" alt=""> -->
-                             <img src="./images/hero-section-watch.png" alt="">
+                             <!-- <img src="./images/hero-section-watch.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
+        </div>  -->
+
+
+
+        <!-- TESTIMONIALS -->
+<div id="testimonialCarousel" class="carousel slide mt-5" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <h1 class="display-5 mt-5  neon-text  fw-bold text-center"> TESTIMONIALS</h1>
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="container mt-5 animate__animated animate__fadeInLeft">
+          <div class="row">
+            <div class="col-md-6 mx-auto text-center">
+              <img class="rounded-circle mb-4" width="80" src="./images/cart2.png" alt="">
+              <p class="fw-bold fs-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, minus magni...</p>
+              <p class="fw-bolder fs-4">March 24 2025</p>
+              <img class="rounded-circle mt-3" width="100" src="https://www.shutterstock.com/image-photo/smiling-young-middle-eastern-man-260nw-2063524544.jpg" alt="Client" />
+            </div>
+          </div>
         </div>
+      </div>
+  
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="container mt-5 animate__animated animate__fadeInLeft">
+          <div class="row">
+            <div class="col-md-6 mx-auto text-center">
+              <img class="rounded-circle mb-4" width="80" src="./images/CART1.png" alt="">
+              <p class="fw-bold fs-3">Another testimonial content goes here. Lorem ipsum dolor sit amet...</p>
+              <p class="fw-bolder fs-4">April 10 2025</p>
+              <img class="rounded-circle mt-3" width="100" src="https://thumbs.dreamstime.com/b/strong-powerful-modern-businessman-pose-looking-confident-successful-accomplished-driven-intense-handsome-african-american-full-86822703.jpg" alt="Client" />
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  
+    <!-- Carousel Controls -->
+    <div class="text-center mt-4">
+      <button class="carousel-control-prev position-static d-inline" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next position-static d-inline ms-3" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+  
 
 
-
-        <footer class="bg-light text-dark pt-5 pb-4">
+        <footer class="pt-5 pb-4" data-bs-theme="light" id="footerB">
             <div class="container text-center text-md-left">
               <div class="row text-center text-md-left align-items-start">
           
                 <!-- Logo and Brand -->
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                   <img src="./images/hero-section-watch.png" alt="Watch Logo" style="width: 60px;">
-                  <h5 class="text-uppercase mt-2 mb-3 fw-bold" style="color: #007BFF;">TimeZone Watches</h5>
-                  <p>Premium quality watches for men and women. Discover your style with elegance and precision.</p>
+                  <h5 class="text-uppercase mt-2 mb-3 fw-bold text-primary">TimeZone Watches</h5>
+                  <p class="text-body-secondary">Premium quality watches for men and women. Discover your style with elegance and precision.</p>
                 </div>
           
                 <!-- Quick Links -->
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                  <h6 class="text-uppercase mb-4 fw-bold" style="color: #007BFF;">Quick Links</h6>
-                  <p><a href="#" class="text-dark text-decoration-none">Home</a></p>
-                  <p><a href="#" class="text-dark text-decoration-none">Shop</a></p>
-                  <p><a href="#" class="text-dark text-decoration-none">About Us</a></p>
-                  <p><a href="#" class="text-dark text-decoration-none">Contact</a></p>
+                  <h6 class="text-uppercase mb-4 fw-bold text-primary">Quick Links</h6>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="text-decoration-none text-body">Home</a></li>
+                    <li><a href="#" class="text-decoration-none text-body">Shop</a></li>
+                    <li><a href="#" class="text-decoration-none text-body">About Us</a></li>
+                    <li><a href="#" class="text-decoration-none text-body">Contact</a></li>
+                  </ul>
                 </div>
           
                 <!-- Contact -->
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                  <h6 class="text-uppercase mb-4 fw-bold" style="color: #007BFF;">Contact</h6>
-                  <p><i class="fas fa-map-marker-alt me-2"></i> Lahore, Pakistan</p>
-                  <p><i class="fas fa-envelope me-2"></i> support@timezone.com</p>
-                  <p><i class="fas fa-phone me-2"></i> +92 345 6789012</p>
+                  <h6 class="text-uppercase mb-4 fw-bold text-primary">Contact</h6>
+                  <p class="text-body"><i class="fas fa-map-marker-alt me-2"></i> Lahore, Pakistan</p>
+                  <p class="text-body"><i class="fas fa-envelope me-2"></i> support@timezone.com</p>
+                  <p class="text-body"><i class="fas fa-phone me-2"></i> +92 345 6789012</p>
                 </div>
           
                 <!-- Social -->
                 <div class="col-md-2 col-lg-4 col-xl-3 mx-auto mt-3">
-                  <h6 class="text-uppercase mb-4 fw-bold" style="color: #007BFF;">Follow Us</h6>
-                  <a href="#" class="text-dark me-3 fs-5"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#" class="text-dark me-3 fs-5"><i class="fab fa-instagram"></i></a>
-                  <a href="#" class="text-dark me-3 fs-5"><i class="fab fa-twitter"></i></a>
-                  <a href="#" class="text-dark me-3 fs-5"><i class="fab fa-youtube"></i></a>
+                  <h6 class="text-uppercase mb-4 fw-bold text-primary">Follow Us</h6>
+                  <a href="#" aria-label="Facebook" class="text-body me-3 fs-5"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" aria-label="Instagram" class="text-body me-3 fs-5"><i class="fab fa-instagram"></i></a>
+                  <a href="#" aria-label="Twitter" class="text-body me-3 fs-5"><i class="fab fa-twitter"></i></a>
+                  <a href="#" aria-label="YouTube" class="text-body me-3 fs-5"><i class="fab fa-youtube"></i></a>
                 </div>
               </div>
           
               <!-- Divider -->
-              <hr class="my-4">
+              <hr class="my-4 text-body-secondary">
           
               <!-- Copyright -->
               <div class="row">
                 <div class="col-md-12 text-center">
-                  <p class="mb-0">&copy; 2025 <strong style="color: #007BFF;">TimeZone Watches</strong> — All Rights Reserved</p>
+                  <p class="mb-0 text-body">&copy; 2025 <strong class="text-primary">TimeZone Watches</strong> — All Rights Reserved</p>
                 </div>
               </div>
             </div>
           </footer>
+          
 
      
           
