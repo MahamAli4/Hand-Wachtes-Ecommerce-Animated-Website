@@ -18,6 +18,125 @@ body {
     transition: .4s;
 }
 
+
+/*============================ header navbar section ============================================ */
+/* Theme Variables */
+body.light-theme {
+    --bg-color: #8bb7e3;
+    --text-color: #212529;
+    --nav-bg: #88c0f9;
+    --primary-color: #007bff;
+  }
+
+  body.dark-theme {
+    --bg-color: #212529;
+    --text-color: #f8f9fa;
+    --nav-bg: #343a40;
+    --primary-color: #007bff;
+  }
+
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.4s, color 0.4s;
+    padding-top: 85px;
+  }
+
+  .navbar {
+    background-color:var(--nav-bg);
+    transition: background-color 0.4s;
+    animation: slideDown 0.8s ease-out forwards;
+    opacity: 0;
+  }
+
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* Brand Logo Slide */
+  .brand-slide {
+    animation: fadeInLeft 1s ease forwards;
+  }
+
+  @keyframes fadeInLeft {
+    from {
+      transform: translateX(-30px);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  /* Link underline animation */
+  .link-animate {
+    position: relative;
+    transition: color 0.3s ease;
+  }
+
+  .link-animate::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+  }
+
+  .link-animate:hover::after {
+    width: 100%;
+  }
+
+  /* Icon animation */
+  .icon-animate {
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+  }
+
+  .icon-animate:hover {
+    transform: scale(1.2);
+    color: var(--primary-color);
+  }
+
+  /* Shadow on scroll */
+  .navbar.scrolled {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Button pulse */
+  .button-pulse {
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.6);
+    }
+
+    70% {
+      box-shadow: 0 0 0 10px rgba(0, 123, 255, 0);
+    }
+
+    100% {
+      box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+    }
+  }
+
+/*============================ header navbar section ============================================ */
+
+
 ul {
     list-style: none;
 }
@@ -622,43 +741,22 @@ p{
 
 .btnPRODUCT:HOVER{
     color: #007bff;
-    background: #007bff IM !important;
+    background: var(--nav-bg) !important;
 }
 
 
-/* slider  */
-
-.float-img {
-    animation: floatImage 5s ease-in-out infinite;
+  /* FOOTER  */
+#footerB{
+    background-color:#cfe2ff !important;
   }
 
-  @keyframes floatImage {
-    0%, 100% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-20px);
-    }
-  }
-
-  .review-container {
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-  }
-
-  .carousel-item {
-    padding: 30px;
-  }
-
-  .review-text {
-    font-size: 1.1rem;
-    color: #333;
-  }
-
-  .review-author {
-    font-weight: bold;
-    margin-top: 10px;
-    color: #555;
-  }
+#testimonialCarousel{
+    padding: 50px;
+    background:url(../images/107763-royal-blue-abstract.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-bottom: 0px;
+    color: #fff;
+}
